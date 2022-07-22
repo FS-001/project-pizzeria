@@ -54,18 +54,36 @@
 
   class Product{
     constructor(id, data){
+    //constructor(){
       const thisProduct = this;
 
       // create instance id and data
       thisProduct.id = id;
       thisProduct.data = data;
 
+      thisProduct.renderInMenu();
+
       console.log('new Product:', thisProduct);
     }
+
+    renderInMenu(){
+      const thisProduct = this;
+    }
+
+    /* generate HTML based on template */
+    //      const generatedHTML = templates.menuProduct(thisProduct.data);
+
+    /* create element using utils.createElementFromHTML */
+
+    /* find menu container */
+
+    /* add element to menu */
   }
 
   const app = {
     initMenu: function(){
+      //const testProduct = new Product();
+      //console.log('testProduct: ', testProduct);
       const thisApp = this;
 
       console.log('thisApp.data:', thisApp.data);
@@ -75,7 +93,7 @@
       }
     },
 
-    // prepare access to data from dataSource object (later from the server)
+    // prepare access to data from dataSource object (later data will be taken from the server)
     initData: function(){
       const thisApp = this;
 
