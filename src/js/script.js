@@ -68,16 +68,16 @@
 
     renderInMenu(){
       const thisProduct = this;
+
+      /* generate HTML based on template */
+      const generatedHTML = templates.menuProduct(thisProduct.data);
+
+      /* create element using utils.createElementFromHTML */
+
+      /* find menu container */
+
+      /* add element to menu */
     }
-
-    /* generate HTML based on template */
-    //      const generatedHTML = templates.menuProduct(thisProduct.data);
-
-    /* create element using utils.createElementFromHTML */
-
-    /* find menu container */
-
-    /* add element to menu */
   }
 
   const app = {
