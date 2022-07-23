@@ -79,6 +79,7 @@
       const menuContainer = document.querySelector(select.containerOf.menu);
 
       /* add element to menu */
+      menuContainer.appendChild(thisProduct.element);
     }
   }
 
@@ -100,7 +101,7 @@
       const thisApp = this;
 
       thisApp.data = dataSource;
-    },       
+    },
 
     init: function(){
       const thisApp = this;
